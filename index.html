@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Portal</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <div class="auction-container">
+        <h1>Auction Item: Crops,wheat,rice etc</h1>
+
+        <div class="auction-item">
+            <img src= "C:\Users\HP\Downloads\crop.jpg" alt="crops" >
+            <p class="description">This is a CROPS.</p>
+        </div>
+
+        <div class="auction-info">
+            <p><strong>Current Highest Bid: $<span id="highestBid">100</span></strong></p>
+            <p>Time Remaining: <span id="timer">00:10</span> (10 seconds)</p>
+        </div>
+
+        <div class="bid-section">
+            <input type="number" id="bidAmount" placeholder="Enter your bid" min="1">
+            <button onclick="placeBid()">Place Bid</button>
+        </div>
+
+        <div class="bid-history">
+            <h2>Bid History</h2>
+            <ul id="bidHistoryList">
+                <li>No bids placed yet.</li>
+            </ul>
+        </div>
+
+        <p class="footer">Auction ends soon!</p>
+    </div>
+
+    <script src="internal.js"></script>
+</body>
+</html>
